@@ -4,6 +4,10 @@ int main()
 {
 	float a, b, c;
 	scanf_s("%f %f", &a, &b);
-	printf("%f", sqrt((a * a) + (b * b)));
+	if (a >= 0 && b >= 0)
+	{
+		printf("%f", sqrt((a * a) + (b * b)));
+	}
+	else printf("Error");
 	return 0;
 }
